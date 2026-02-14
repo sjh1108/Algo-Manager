@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Baekjoon Notifier",
+    "version": "1.0",
+    "description": "백준 문제 정답 감지 후 서버로 전송",
+    "permissions": ["activeTab"],
+    "host_permissions": [
+      "https://www.acmicpc.net/*",
+      "http://localhost:8080/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.acmicpc.net/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
